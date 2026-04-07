@@ -1,29 +1,36 @@
-# Just Iberia Girona · Rodolfo Stempellato
+# Just Iberia Girona · Rodolfo Stempellato · v4
 
-Aplicación web estática, autónoma, compatible con GitHub Pages.
+Aplicación web estática con **bot experto** basado en la base de conocimiento oficial de justiberia.es.
 
 ## Archivos
 ```
-index.html                    ← Todo en un solo archivo (CSS + JS embebidos)
-catalogo-just-iberia-2026.pdf ← Catálogo (copiar del ZIP original)
-.nojekyll                     ← Necesario para GitHub Pages
+index.html                    ← Todo embebido (CSS + JS + KB completa)
+catalogo-just-iberia-2026.pdf ← Catálogo local
+.nojekyll                     ← GitHub Pages
 ```
 
-## Funcionalidades
-- Asistente de productos con perfil conversacional local
-- Visor PDF del catálogo + fallback automático para móvil/iOS
-- Formulario de consulta con botones WhatsApp y Gmail
-- Módulo de eventos + inscripción
-- Panel privado (contraseña: justgirona2026)
-- Navegación hamburguesa en móvil
-- Botón flotante WhatsApp
+## Bot experto — Conocimiento real de Just Iberia
+El bot incluye base de datos de 40+ productos con:
+- Nombre, descripción, ingredientes clave, uso recomendado
+- Tipo de piel al que va dirigido
+- Problemas que resuelve (palabras clave)
+- URL oficial de cada producto en justiberia.es
+
+### Intenciones que reconoce:
+- Piernas cansadas / circulación / varices
+- Relax, estrés, insomnio, ansiedad
+- Piel seca, sensible, atópica, hidratación
+- Rutina facial / antiedad / arrugas
+- Músculos y articulaciones / deporte
+- Cabello: caída, caspa, grasa, volumen, daño
+- Baby & Kids (bebés y niños)
+- Acné e impurezas
+- Pies y talones
+- Precios / contacto / catálogo / marca
+
+## Contraseñas (cambiar antes de publicar)
+- Panel admin: `justgirona2026`
 
 ## Despliegue GitHub Pages
-1. Sube index.html, .nojekyll y el PDF al repositorio (rama main)
+1. Subir index.html, .nojekyll y el PDF al repo (rama main)
 2. Settings → Pages → Branch: main → / (root)
-3. Listo en 1-2 minutos
-
-## Sin dependencias externas
-- Sin Google Fonts (Inter/Roboto eliminados → fuentes del sistema)
-- Sin CDN, sin APIs, sin backend
-- Todo el CSS y JS embebido en index.html
